@@ -62,14 +62,14 @@ export default function CollapsibleTable() {
                           </TableRow>
                         </TableHead>
                         <TableBody>
-                          {data.map((e, index) => (
+                          {
                             <TableRow key={index}>
                               <TableCell component="th" scope="row">
                                 {e.user.login}
                               </TableCell>
                               <TableCell>{e.user.id}</TableCell>
                             </TableRow>
-                          ))}
+                          }
                         </TableBody>
                       </Table>
                     </Box>
